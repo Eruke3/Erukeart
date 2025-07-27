@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 
 <html lang="id">
@@ -7,110 +6,75 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>IMVU Profile Website</title>
 <script src="https://cdn.tailwindcss.com"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet"/>
 <style>
-    @keyframes slide {
-      0% {
-        transform: translateY(30px);
-        opacity: 0;
-      }
-      100% {
-        transform: translateY(0);
-        opacity: 1;
-      }
-    }
-    .animate-slide {
-      animation: slide 1s ease-out;
-    }
-  </style>
-<style>
-    @keyframes fade-in {
-      0% { opacity: 0; transform: translateY(-20px); }
+    @keyframes slide-up {
+      0% { opacity: 0; transform: translateY(40px); }
       100% { opacity: 1; transform: translateY(0); }
     }
-    .animate-fade-in {
-      animation: fade-in 1s ease-out forwards;
+    .animate-slide-up {
+      animation: slide-up 1s ease-out both;
     }
-    </style><style>
-@keyframes slide-up {
-  0% { opacity: 0; transform: translateY(40px); }
-  100% { opacity: 1; transform: translateY(0); }
-}
-.animate-slide-up {
-  animation: slide-up 1s ease-out both;
-}
-</style><style>
-@keyframes fadeInScale {
-  0% { opacity: 0; transform: scale(0.95); }
-  100% { opacity: 1; transform: scale(1); }
-}
-.animate-fade-in-scale {
-  animation: fadeInScale 1s ease-in-out both;
-}
-</style><link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet"/><script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script></head>
+  </style>
+</head>
 <body class="bg-white text-gray-800">
 <!-- HEADER -->
-<header class="text-center py-32 relative" style="background-image: url('images/header.jpg.jpg'); background-size: cover; background-position: center; background-attachment: fixed;"><div class="bg-white bg-opacity-20 backdrop-blur-md p-8 rounded-xl inline-block shadow-lg transition-all duration-700 ease-in-out" data-aos="zoom-in" data-aos-duration="1000" style="backdrop-filter: blur(2px);"><h1 class="text-4xl font-bold uppercase text-white tracking-wide mb-4 drop-shadow">JASA EDIT FOTO &amp; CREAT SHOP IMVU</h1><p class="text-white text-lg drop-shadow">Edit Foto Profil • Digital Art • Creat Product Shop • Manipulasi Background</p></div></header>
+<header class="text-center flex items-center justify-center relative min-h-[90vh]" style="background-image: url('images/header.jpg.jpg'); background-size: contain; background-repeat: no-repeat; background-position: center; background-attachment: fixed;">
+<div class="bg-white bg-opacity-20 backdrop-blur-md p-8 rounded-xl inline-block shadow-lg px-4 text-center" data-aos="zoom-in" data-aos-duration="1000">
+<h1 class="text-4xl font-bold uppercase text-white tracking-wide mb-4 drop-shadow">JASA EDIT FOTO &amp; CREAT SHOP IMVU</h1>
+<p class="text-white text-lg drop-shadow">Edit Foto Profil • Digital Art • Creat Product Shop • Manipulasi Background</p>
+</div>
+</header>
 <!-- TRANSISI BACKGROUND -->
-<section class="relative h-[60vh] bg-cover bg-center bg-no-repeat" style="background-image: url('images/Transisi.jpg');">
+<section class="relative h-[60vh] bg-cover bg-center bg-no-repeat flex items-center justify-center" data-aos="fade-up" data-aos-duration="1200" style="background-image: url('images/Transisi.jpg'); background-attachment: fixed;">
 <div class="absolute inset-0 bg-black bg-opacity-30"></div>
 </section>
 <!-- NAVIGASI -->
 <nav class="sticky top-0 z-50 bg-[#F3F4F6] shadow-md">
 <ul class="flex justify-center space-x-6 py-4 text-black font-semibold">
-<li class="hover:text-pink-500 transition duration-300 cursor-pointer"><a class="hover:text-pink-500 transition duration-300 cursor-pointer" href="#tentang">Tentang</a></li>
-<li class="hover:text-pink-500 transition duration-300 cursor-pointer"><a class="hover:text-pink-500 transition duration-300 cursor-pointer" href="#layanan">Layanan</a></li>
-<li class="hover:text-pink-500 transition duration-300 cursor-pointer"><a class="hover:text-pink-500 transition duration-300 cursor-pointer" href="#gallery">Galeri</a></li>
-<li class="hover:text-pink-500 transition duration-300 cursor-pointer"><a class="hover:text-pink-500 transition duration-300 cursor-pointer" href="#kontak">Kontak</a></li>
+<li><a class="hover:text-pink-500 transition duration-300" href="#tentang">Tentang</a></li>
+<li><a class="hover:text-pink-500 transition duration-300" href="#layanan">Layanan</a></li>
+<li><a class="hover:text-pink-500 transition duration-300" href="#gallery">Galeri</a></li>
+<li><a class="hover:text-pink-500 transition duration-300" href="#kontak">Kontak</a></li>
 </ul>
 </nav>
 <!-- TENTANG -->
-<section class="py-12 bg-white text-center animate-slide bg-cover bg-center backdrop-blur-sm py-12 flex justify-center" id="tentang" style="background-image: url('images/html_poto_2_blur40.jpg'); background-attachment: fixed;"><div class="bg-white bg-opacity-80 rounded-xl p-8 max-w-xl shadow-md transition-transform duration-700 ease-in-out hover:scale-105" style="backdrop-filter: blur(4px);"><h2 class="text-2xl font-bold mb-4 text-center text-black">Tentang Saya</h2><p class="text-black text-center">
-      Hai! Saya <strong>Erukee</strong>, seorang editor foto dan kreator produk IMVU. Saya menyediakan berbagai layanan mulai dari edit foto profil IMVU, manipulasi background, hingga jasa <em>creat product shop</em> yang menarik dan profesional.
-    </p></div></section>
-<!-- LAYANAN -->
-<section class="py-12 bg-gray-50 text-center animate-slide bg-cover bg-center backdrop-blur-sm" id="layanan" style="background-image: url('images/html_poto_2_blur40.jpg'); background-attachment: fixed;">
-<h2 class="text-3xl font-bold text-gray-800 mb-6 text-white" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.6);">Layanan</h2>
-<div class="grid gap-6 max-w-4xl mx-auto px-4 sm:grid-cols-2 md:grid-cols-3 text-gray-700">
-<div class="bg-[#F3F4F6] p-6 rounded-xl shadow hover:shadow-lg hover:scale-105 transition-transform duration-300 text-center">
-        🎨 <p class="mt-2 font-semibold text-black" style="color: black;">Edit Foto Profil IMVU</p>
-<p class="text-sm text-gray-500 text-black" style="color: black;">Avatar, background, dan art style</p>
-</div>
-<div class="bg-[#F3F4F6] p-6 rounded-xl shadow hover:shadow-lg hover:scale-105 transition-transform duration-300 text-center">
-        🛍️ <p class="mt-2 font-semibold text-black" style="color: black;">Creat Produk Online Shop</p>
-<p class="text-sm text-gray-500 text-black" style="color: black;">Produk IMVU custom &amp; unik</p>
-</div>
-<div class="bg-[#F3F4F6] p-6 rounded-xl shadow hover:shadow-lg hover:scale-105 transition-transform duration-300 text-center">
-        🖼️ <p class="mt-2 font-semibold text-black" style="color: black;">Manipulasi Foto &amp; Background</p>
-<p class="text-sm text-gray-500 text-black" style="color: black;">Ganti latar &amp; editan realistis</p>
-</div>
-<div class="bg-[#F3F4F6] p-6 rounded-xl shadow hover:shadow-lg hover:scale-105 transition-transform duration-300 text-center">
-        💻 <p class="mt-2 font-semibold text-black" style="color: black;">Design Website</p>
-<p class="text-sm text-gray-500 text-black" style="color: black;">Landing page, portofolio, jasa</p>
-</div>
-<div class="bg-[#F3F4F6] p-6 rounded-xl shadow hover:shadow-lg hover:scale-105 transition-transform duration-300 text-center">
-        🎵 <p class="mt-2 font-semibold text-black" style="color: black;">Music Maker</p>
-<p class="text-sm text-gray-500 text-black" style="color: black;">Soundtrack &amp; beat custom</p>
-</div>
+<section class="py-12 bg-white text-center bg-cover bg-center backdrop-blur-sm" id="tentang" style="background-image: url('images/html_poto_2_blur40.jpg'); background-attachment: fixed;">
+<div class="bg-white bg-opacity-80 rounded-xl p-8 max-w-xl mx-auto shadow-md hover:scale-105 transition-transform duration-700">
+<h2 class="text-2xl font-bold mb-4 text-black px-4 text-center">Tentang Saya</h2>
+<p class="text-black">Hai! Saya <strong>Erukee</strong>, seorang editor foto dan kreator produk IMVU. Saya menyediakan berbagai layanan mulai dari edit foto profil IMVU, manipulasi background, hingga jasa <em>creat product shop</em> yang menarik dan profesional.</p>
 </div>
 </section>
+<!-- LAYANAN -->
+<section class="py-12 bg-gray-50 text-center bg-cover bg-center backdrop-blur-sm" id="layanan" style="background-image: url('images/html_poto_2_blur40.jpg'); background-attachment: fixed;">
+<h2 class="text-3xl font-bold text-white mb-6 px-4 text-center" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.6);">Layanan</h2>
+<div class="grid gap-6 px-4 max-w-6xl mx-auto grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 text-black">
+<div class="bg-[#F3F4F6] p-6 rounded-xl shadow hover:shadow-xl transition-transform duration-500 text-center" data-aos="flip-left" data-aos-duration="1000" data-aos-easing="ease-out-cubic">🎨 <p class="mt-2 font-semibold">Edit Foto Profil IMVU</p><p class="text-sm">Avatar, background, dan art style</p></div>
+<div class="bg-[#F3F4F6] p-6 rounded-xl shadow hover:shadow-xl transition-transform duration-500 text-center" data-aos="flip-left" data-aos-duration="1000" data-aos-easing="ease-out-cubic">🛍️ <p class="mt-2 font-semibold">Creat Produk Online Shop</p><p class="text-sm">Produk IMVU custom &amp; unik</p></div>
+<div class="bg-[#F3F4F6] p-6 rounded-xl shadow hover:shadow-xl transition-transform duration-500 text-center" data-aos="flip-left" data-aos-duration="1000" data-aos-easing="ease-out-cubic">🖼️ <p class="mt-2 font-semibold">Manipulasi Foto &amp; Background</p><p class="text-sm">Ganti latar &amp; editan realistis</p></div>
+<div class="bg-[#F3F4F6] p-6 rounded-xl shadow hover:shadow-xl transition-transform duration-500 text-center" data-aos="flip-left" data-aos-duration="1000" data-aos-easing="ease-out-cubic">💻 <p class="mt-2 font-semibold">Design Website</p><p class="text-sm">Landing page, portofolio,</p></div>
+<div class="bg-[#F3F4F6] p-6 rounded-xl shadow hover:shadow-xl transition-transform duration-500 text-center" data-aos="flip-left" data-aos-duration="1000" data-aos-easing="ease-out-cubic">🎵 <p class="mt-2 font-semibold">Music Maker</p><p class="text-sm">Soundtrack &amp; beat custom</p></div>
+</div>
+</section><section class="py-16 text-center bg-cover bg-center backdrop-blur-sm p x - 4" id="order" style="background-image: url('images/html_poto_2_blur40.jpg'); background-attachment: fixed;"><div class="bg-white bg-opacity-80 rounded-xl shadow-lg p-6 w-full max-w-2xl mx-auto text-center" data-aos="fade-up"><div class="text-4xl mb-2">🛒</div><h3 class="text-xl font-semibold mb-1 text-black">Order Sekarang</h3><p class="text-gray-700">Harga Mulai Dari Rp.20.000</p><p class="text-gray-700 mb-4">Konsultasi Gratis</p><a class="inline-block bg-pink-500 text-white px-4 py-2 rounded-full hover:bg-pink-600 transition" href="#kontak">Order via WhatsApp</a></div></section>
 <!-- GALERI -->
 <section class="py-10 bg-gray-100" id="gallery">
 <div class="text-center mb-10">
-<h2 class="text-3xl font-bold text-gray-800">Galeri Karya</h2>
+<h2 class="text-3xl font-bold text-gray-800 px-4 text-center">Galeri Karya</h2>
 <p class="text-gray-600">Hasil editan terbaik kami</p>
 </div>
-<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-4 px-4 max-w-6xl mx-auto">
-<img class="rounded-lg shadow-md hover:scale-105 transform transition duration-300" src="images/eruke 2.jpg"/>
-<img class="rounded-lg shadow-md hover:scale-105 transform transition duration-300" src="images/PP22.jpg"/>
-<img class="rounded-lg shadow-md hover:scale-105 transform transition duration-300" src="images/qlui 2 pp.jpg"/>
-<img class="rounded-lg shadow-md hover:scale-105 transform transition duration-300" src="images/pp qnie.jpg"/>
-<img class="rounded-lg shadow-md hover:scale-105 transform transition duration-300" src="images/QNOV.jpg"/>
-<img class="rounded-lg shadow-md hover:scale-105 transform transition duration-300" src="images/profile bratty.jpg"/>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 px-4 max-w-6xl mx-auto">
+<a class="gallery-lightbox" href="images/eruke 2.jpg"><img class="rounded-lg shadow-md hover:scale-105 transform transition duration-300" src="images/eruke 2.jpg"/></a>
+<a class="gallery-lightbox" href="images/PP22.jpg"><img class="rounded-lg shadow-md hover:scale-105 transform transition duration-300" src="images/PP22.jpg"/></a>
+<a class="gallery-lightbox" href="images/qlui 2 pp.jpg"><img class="rounded-lg shadow-md hover:scale-105 transform transition duration-300" src="images/qlui 2 pp.jpg"/></a>
+<a class="gallery-lightbox" href="images/pp qnie.jpg"><img class="rounded-lg shadow-md hover:scale-105 transform transition duration-300" src="images/pp qnie.jpg"/></a>
+<a class="gallery-lightbox" href="images/QNOV.jpg"><img class="rounded-lg shadow-md hover:scale-105 transform transition duration-300" src="images/QNOV.jpg"/></a>
+<a class="gallery-lightbox" href="images/profile bratty.jpg"><img class="rounded-lg shadow-md hover:scale-105 transform transition duration-300" src="images/profile bratty.jpg"/></a>
 </div>
 </section>
 <!-- KONTAK -->
-<section class="py-12 bg-white text-center animate-slide bg-cover bg-center backdrop-blur-sm" id="kontak" style="background-image: url('images/html_poto_2_blur40.jpg'); background-attachment: fixed;">
-<h2 class="text-3xl font-bold text-gray-800 mb-6">Kontak</h2>
+<section class="py-12 bg-white text-center bg-cover bg-center backdrop-blur-sm" id="kontak" style="background-image: url('images/html_poto_2_blur40.jpg'); background-attachment: fixed;">
+<h2 class="text-3xl font-bold text-gray-800 mb-6 px-4 text-center">Kontak</h2>
 <div class="space-y-4 text-gray-700 text-lg">
 <p>📷 Instagram: <a class="text-pink-500 hover:underline" href="https://instagram.com/eruki25" target="_blank">@eruki25</a></p>
 <p>🧍‍♂️ IMVU: <a class="text-blue-500 hover:underline" href="https://www.imvu.com/catalog/web_mypage.php?user=383556513" target="_blank">Klik untuk lihat profil</a></p>
@@ -118,5 +82,12 @@
 <p>📱 WhatsApp: <a class="text-green-600 hover:underline" href="https://wa.me/6285925120113" target="_blank">Klik untuk chat langsung</a></p>
 </div>
 </section>
-<script>AOS.init();</script></body>
+<!-- SCRIPT -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<script>
+  AOS.init();
+  const lightbox = GLightbox({ selector: '.gallery-lightbox' });
+</script>
+</body>
 </html>
